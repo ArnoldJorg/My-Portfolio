@@ -3,10 +3,21 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      // animation: {
-      //   "spin-slow": "spin 5s linear infinite", // Slower rotation
-      // },
+      keyframes: {
+        "border-spin": {
+          "100%": {
+            transform: "rotate(-360deg)",
+          },
+        },
+      },
+      animation: {
+        "border-spin": "border-spin 7s linear infinite",
+      },
+      colors: {
+        "custom-purple": "rgba(192, 132, 252, 0.4)",
+      },
     },
   },
+
   plugins: [],
 };

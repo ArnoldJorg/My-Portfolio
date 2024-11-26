@@ -2,6 +2,7 @@ import React from "react";
 // import Logo from "./assets/images/IMG_9566.jpg";
 import ScribbleBorder from "./assets/images/Scribble.png";
 import Logo1 from "./assets/images/logo192.png";
+import GradientButton from "./GradientButton.tsx";
 
 const About = () => {
   return (
@@ -37,13 +38,6 @@ const About = () => {
                   height="40"
                   className="m-6"
                   alt="react-image"
-                />{" "}
-                <img
-                  src={Logo1}
-                  width="50"
-                  height="40"
-                  className="m-6"
-                  alt="react-image"
                 />
               </div>
               <p className=" w-full break-words text-xl">
@@ -57,20 +51,12 @@ const About = () => {
                 P.S The video on the right is outdated and I am no longer
                 looking for a new role.
               </p>
-              <div className="flex space-x-10  flex-row m-8">
+              <div className="flex space-x-10  flex-row my-8 justify-center">
                 {/* number copy to clipboard? */}
-                <button className="bg-gray-500 text-white px-4 p-2 rounded-full ">
-                  Email
-                </button>
-                <button className="bg-gray-500 text-white px-4 p-2 rounded-full">
-                  LinkedIn
-                </button>
-                <button className="bg-gray-500 text-white px-4 p-2 rounded-full">
-                  Twitter
-                </button>
-                <button className="bg-gray-500  text-white px-4 p-2 rounded-full">
-                  CV/Resume
-                </button>
+                <GradientButton />
+                <GradientButton />
+                <GradientButton />
+                <GradientButton />
               </div>
             </div>
           </div>
