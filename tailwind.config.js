@@ -15,6 +15,15 @@ module.exports = {
       },
       colors: {
         "custom-purple": "rgba(192, 132, 252, 0.4)",
+        "custom-grey": "rgba(120, 120, 120, 0.8)",
+        "custom-stone": "rgba(243, 244, 246)",
+        "custom-grey-2": "rgba(20,20,20)",
+        "custom-grey-3": "rgba(38,38,38)",
+        "custom-white": "rgba(203 213 225),",
+      },
+      fontFamily: { custom: ["font-inter-regular", "sans-serif"] },
+      height: {
+        128: "24rem",
       },
     },
   },

@@ -1,16 +1,23 @@
 import React from "react";
 
 const GradientButton = () => {
+  const onClickEvent = () => {
+    console.log("gwhesg9ew8gewh998h");
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center bg-slate-950 text-white">
-      <div className="card-wrapper h-[50px] w-[100px]">
+    <button
+      onClick={() => onClickEvent()}
+      className="flex flex-col items-center justify-center text-white hover:opacity-90"
+    >
+      <div className="card-wrapper h-[40px] w-[100px]">
         <div className="card-content flex items-center justify-center text-xs">
           <div className="text-center">
-            <button className="font-semibold underline">CV/Resume</button>
+            <p className="font-semibold text-custom-white">CV/Resume</p>
           </div>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

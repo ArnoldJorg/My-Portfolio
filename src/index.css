@@ -6,16 +6,22 @@
   0% {
     transform: rotate(0deg);
   }
-  33% {
-    transform: rotate(180deg);
+  20% {
+    transform: rotate(72deg);
   }
-  66% {
-    transform: rotate(180deg);
+  40% {
+    transform: rotate(144deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  80% {
+    transform: rotate(288deg);
   }
 }
 
 .scribble-border-animation {
-  animation: toggleRotate 0.28s steps(1) infinite;
+  animation: toggleRotate 0.3s steps(1) infinite;
 }
 
 .pixelated {
@@ -25,15 +31,15 @@
 @layer utilities {
   /* Act as a border */
   .card-wrapper {
-    @apply relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-700 to-slate-800;
+    @apply relative overflow-hidden rounded-2xl bg-gradient-to-b from-custom-grey-2 to-custom-grey-3;
   }
 
   /* Gradient */
   .card-wrapper::before {
     background: conic-gradient(
       /* this is from what colour to what colour the line should change to */
-        rgba(203 213 225),
-      rgba(100 116 139),
+        rgba(20, 20, 20),
+      rgb(38, 38, 38),
       transparent 80deg
     );
 
@@ -42,6 +48,15 @@
 
   /* Body */
   .card-content {
-    @apply absolute left-[1px] top-[1px] h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900;
+    @apply absolute left-[1px] top-[1px] h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-full bg-gradient-to-b from-custom-grey-2 to-custom-grey-3;
   }
+
+  @font-face {
+    font-family: 'font-inter-regular'; /* Replace with your font's name */
+    src: url('/src/assets/fonts/Inter/static/Inter-Regular.ttf') format('truetype'); /* Adjust path */
+         /* url('/src/assets/fonts/YourFontFile.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 }
