@@ -52,11 +52,28 @@
   }
 
   @font-face {
-    font-family: 'font-inter-regular'; /* Replace with your font's name */
-    src: url('/src/assets/fonts/Inter/static/Inter-Regular.ttf') format('truetype'); /* Adjust path */
-         /* url('/src/assets/fonts/YourFontFile.woff') format('woff'); */
+    font-family: "font-inter-regular"; /* Replace with your font's name */
+    src: url("/src/assets/fonts/Inter/static/Inter-Regular.ttf")
+      format("truetype"); /* Adjust path */
+    /* url('/src/assets/fonts/YourFontFile.woff') format('woff'); */
     font-weight: normal;
     font-style: normal;
   }
-  
+
+  @font-face {
+    font-family: "Roboto";
+    src: url("/src/assets/fonts/Inter/static/Roboto-Bold.ttf")
+      format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Inter-Bold";
+    src: url("/src/assets/fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+  }
 }

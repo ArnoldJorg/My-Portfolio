@@ -22,6 +22,8 @@ module.exports = {
         "custom-white": "rgba(203 213 225),",
       },
       fontFamily: { custom: ["font-inter-regular", "sans-serif"] },
+      fontFamily: { Roboto: ["Roboto", "sans-serif"] },
+      fontFamily: { InterBold: ["Inter-Bold", "sans-serif"] },
       height: {
         128: "24rem",
       },
