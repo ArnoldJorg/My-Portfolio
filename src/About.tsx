@@ -8,10 +8,10 @@ import BorderAnimation from "./Video/BorderAnimation.tsx";
 
 const About = () => {
   return (
-    <div className="bg-black  flex w-screen  h-screen">
-      <div className="flex flex-col items-center justify-center h-full w-full overflow-y-auto ">
-        <div className=" flex flex-row w-7/12 h-[70%] border-2 border-green-800  ">
-          <div className="w-[100%] h-[100%]  items-center justify-center border-2 space-x-10  ">
+    <div className=" h-screen w-screen ">
+      <div className="flex flex-col items-center justify-center min-h-full w-full  ">
+        <div className=" flex flex-row w-7/12 h-[70%]  ">
+          <div className="w-[100%] h-[100%]  items-center justify-center space-x-10  ">
             <div className="flex text-white flex-col ">
               <h1 className="items-center justify-center w-full  font-InterBold text-3xl  ">
                 Arnold Mobio
@@ -59,16 +59,6 @@ const About = () => {
             <VideoPlayer />
           </div>
         </div>
-        {/* <div className="bg-grey-800 border-2 border-purple-800 h-[30%] flex w-7/12">
-          <div className="flex flex-row items-centeer justify-center">
-            <p className="font-Roboto flex   mx-2 my-7  justify-center items-center text-xl bg-gray-600 px-2 rounded-xl">
-              {"<solutionize/>"}
-            </p>
-          </div>
-          <div className="bg-brown-800 flex">
-            <p> fesgiuoewgfnioewgnewoigfiewngnewoigfnowiegfnweofn</p>{" "}
-          </div>
-        </div> */}
       </div>
     </div>
   );
