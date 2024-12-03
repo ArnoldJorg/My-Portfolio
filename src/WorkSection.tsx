@@ -1,8 +1,22 @@
 import React from "react";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
-const ScrollTest = () => {
+const WorkSection = ({ onInViewChange }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    onInViewChange("work", inView); // Notify parent component about visibility
+  }, [inView]);
+
   return (
-    <div className="  border-4 border-purple w-full h-min-screen">
+    <div
+      ref={ref}
+      id="work-section"
+      className=" text-white bg-custom-grey w-full h-min-screen"
+    >
       <p> fesnfifsnoaefnisfoonewoifwnfoewanfioninoio</p>
       <p> fesnfifsnoaefnisfoonewoifwnfoewanfioninoio</p>
       <p> fesnfifsnoaefnisfoonewoifwnfoewanfioninoio</p>
@@ -46,4 +60,4 @@ const ScrollTest = () => {
   );
 };
 
-export default ScrollTest;
+export default WorkSection;

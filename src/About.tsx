@@ -5,11 +5,19 @@ import Logo1 from "./assets/images/Finsta.jpeg";
 import GradientButton from "./GradientButton.tsx";
 import VideoPlayer from "./Video/VideoPlayer.tsx";
 import BorderAnimation from "./Video/BorderAnimation.tsx";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-const About = () => {
+const About = ({ onInViewChange }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+
+  if (onInViewChange) onInViewChange(inView, "about");
+
   return (
-    <div className=" h-screen w-screen ">
-      <div className="flex flex-col items-center justify-center min-h-full w-full  ">
+    <div ref={ref} id="about-section" className=" h-screen w-screen   ">
+      <div className="flex flex-col items-center justify-center min-h-full w-full ">
         <div className=" flex flex-row w-7/12 h-[70%]  ">
           <div className="w-[100%] h-[100%]  items-center justify-center space-x-10  ">
             <div className="flex text-white flex-col ">
@@ -31,7 +39,7 @@ const About = () => {
                   {"<solutionize/>"}
                 </p>
               </div>
-              <p className=" w-full break-words text-xl text-custom-white ">
+              <p className=" w-full break-words text-xl text-custom-white">
                 Hello there! My name is Julius and I'm a Product Designer at
                 {/* specific fonts and boldness I will specify soon*/}{" "}
                 <span className="opacity-100"> Flexa</span>
