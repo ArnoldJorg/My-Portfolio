@@ -19,11 +19,11 @@ const About = ({ onInViewChange }) => {
     <div
       ref={ref}
       id="about-section"
-      className=" h-screen w-screen scroll-smooth "
+      className=" py-[8vw] w-screen scroll-smooth "
     >
       <div className="flex flex-col items-center justify-center min-h-full w-full ">
-        <div className=" flex lg:max-2xl:flex-row lg:w-8/12 lg:max-2xl:h-[70%] sm:w-full sm:max-lg:h-full lg:max-2xl:w-3/4 sm:max-lg:flex-col ">
-          <div className="w-full h-full items-center justify-center space-x-10 border sm:max-lg:order-2 lg:max-2xl:order-1">
+        <div className=" flex lg:max-2xl:flex-row lg:w-[60%] lg:max-2xl:h-[70%] sm:w-full sm:max-lg:h-full lg:max-2xl:w-3/4 sm:max-lg:flex-col ">
+          <div className="w-full lg:h-full items-center justify-center space-x-10 border sm:max-lg:order-2 lg:max-2xl:order-1">
             <div className="flex text-white flex-col ">
               <h1 className="items-center justify-center w-full  font-InterBold text-3xl  ">
                 Arnold Mobio
@@ -58,7 +58,7 @@ const About = ({ onInViewChange }) => {
                   looking for a new role.
                 </span>
               </p>
-              <div className="flex space-x-4  flex-row my-8 ">
+              <div className="flex space-x-4 sm:justify-center flex-row sm:my-4 lg:my-8 ">
                 <GradientButton name="Email" />
                 <GradientButton name="CV/Resume" />
                 <GradientButton name="LinkedIn" />
@@ -66,7 +66,7 @@ const About = ({ onInViewChange }) => {
               </div>
             </div>
           </div>
-          <div className="sm:relative w-full h-full items-center justify-center sm:order-1 lg:order-2 sm:my-12 sm:max-lg:border-2 ">
+          <div className="sm:relative w-full h-full items-center justify-center sm:order-1 lg:order-2 sm:mb-10 sm:max-lg:border-2 ">
             <BorderAnimation />
             <VideoPlayer />
           </div>
