@@ -7,9 +7,7 @@ const WorkSection = ({ onInViewChange }) => {
     threshold: 0.5,
   });
 
-  useEffect(() => {
-    onInViewChange("work", inView); // Notify parent component about visibility
-  }, [inView]);
+  if (onInViewChange) onInViewChange(inView, "work");
 
   return (
     <div

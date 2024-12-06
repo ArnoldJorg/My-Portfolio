@@ -8,7 +8,7 @@ const BorderAnimation = () => {
       alt="Scribble"
       // width="=100"
       // height="100"
-      className="absolute w-[20rem] inset-x-1/3 m-auto h-[20rem] z-10  scribble-border-animation  object-cover invert rounded-full pixelated grayscale pointer pointer-events-none"
+      className="absolute sm:items-center sm:justify-center sm:top:10 w-[25vw] inset-x-1/3 m-auto h-[25vw] z-10  scribble-border-animation  object-cover invert rounded-full pixelated grayscale pointer pointer-events-none "
     />
   );
 };

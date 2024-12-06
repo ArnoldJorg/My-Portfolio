@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import About from "./About.tsx";
 import WorkSection from "./WorkSection.tsx";
+import MorePage from "./MorePage.tsx";
 
 function App() {
   const [activeSection, setActiveSection] = useState("");
@@ -13,33 +14,44 @@ function App() {
   return (
     <div className=" bg-black overflow-y-auto ">
       <div className="z-10  w-screen bottom-6 flex items-center justify-center fixed ">
-        <div className="flex flex-row justify-center items-center p-4 px-9 space-x-10 bg-black rounded-full border-custom-grey-3 border-2 text-custom-white  ">
-          <nav>
+        <div className="flex flex-row justify-center items-center p-4 px-8 bg-black rounded-full border-custom-grey-3 border-2 text-xl ">
+          <nav className="space-x-8">
             <a
               href="#about-section"
-              className={`px-4 py-2 rounded-full ${
+              className={
                 activeSection === "about"
-                  ? "bg-white text-black"
-                  : "text-custom-white"
-              }`}
+                  ? " text-white "
+                  : "text-white opacity-60 hover:opacity-100"
+              }
             >
               About
             </a>
             <a
               href="#work-section"
-              className={`px-4 py-2 rounded-full ${
+              className={
                 activeSection === "work"
-                  ? "bg-white text-black"
-                  : "text-custom-white"
-              }`}
+                  ? " text-white "
+                  : "text-white opacity-60 hover:opacity-100"
+              }
             >
               Work
+            </a>
+            <a
+              href="#more-section"
+              className={
+                activeSection === "more"
+                  ? " text-white "
+                  : "text-white opacity-60 hover:opacity-100"
+              }
+            >
+              More
             </a>
           </nav>
         </div>
       </div>
       <About onInViewChange={handleInViewChange} />
       <WorkSection onInViewChange={handleInViewChange} />
+      <MorePage onInViewChange={handleInViewChange} />
     </div>
   );
 }

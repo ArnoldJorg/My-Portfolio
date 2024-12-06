@@ -84,3 +84,8 @@
     font-style: normal;
   }
 }
+
+html,
+body {
+  overscroll-behavior: none; /* Prevent the bounce effect */
+}

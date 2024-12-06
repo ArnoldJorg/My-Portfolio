@@ -16,10 +16,14 @@ const About = ({ onInViewChange }) => {
   if (onInViewChange) onInViewChange(inView, "about");
 
   return (
-    <div ref={ref} id="about-section" className=" h-screen w-screen   ">
+    <div
+      ref={ref}
+      id="about-section"
+      className=" h-screen w-screen scroll-smooth "
+    >
       <div className="flex flex-col items-center justify-center min-h-full w-full ">
-        <div className=" flex flex-row w-7/12 h-[70%]  ">
-          <div className="w-[100%] h-[100%]  items-center justify-center space-x-10  ">
+        <div className=" flex lg:max-2xl:flex-row lg:w-8/12 lg:max-2xl:h-[70%] sm:w-full sm:max-lg:h-full lg:max-2xl:w-3/4 sm:max-lg:flex-col ">
+          <div className="w-full h-full items-center justify-center space-x-10 border sm:max-lg:order-2 lg:max-2xl:order-1">
             <div className="flex text-white flex-col ">
               <h1 className="items-center justify-center w-full  font-InterBold text-3xl  ">
                 Arnold Mobio
@@ -62,7 +66,7 @@ const About = ({ onInViewChange }) => {
               </div>
             </div>
           </div>
-          <div className="relative w-[100%] h-[100%] inline-block  ">
+          <div className="sm:relative w-full h-full items-center justify-center sm:order-1 lg:order-2 sm:my-12 sm:max-lg:border-2 ">
             <BorderAnimation />
             <VideoPlayer />
           </div>
