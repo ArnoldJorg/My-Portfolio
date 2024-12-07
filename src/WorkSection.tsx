@@ -53,9 +53,22 @@ const WorkSection = ({ onInViewChange }) => {
         <img src={Logo2} className=" flex rounded-2xl" alt="react-image" />
         <img
           src={Logo3}
-          className=" flex  w-[40%] rounded-3xl border-custom-white border- p-1"
+          className=" flex  w-[40%] rounded-3xl  "
           alt="react-image"
         />
+      </div>
+      <div className="flex lg:w-[30%] sm:w-[60%] flex-col justify-center ">
+        <p className=" w-full break-words text-xl text-custom-white">
+          Developed the Profile Page for a client called Finsta, following Figma
+          designs to accurately implement a dynamic user interface. Utilized
+          complex conditional logic to display content based on available data,
+          such as setting a default profile icon or using gallery images when no
+          icon was set. This involved updating data across 10 components,
+          optimizing GraphQL queries to fetch only relevant data and improving
+          loading speed by 30%. Additionally, I modified schemas and adjusted
+          data properties across the project, ensuring seamless integration and
+          error-free performance before merging with the main codebase.
+        </p>
       </div>
     </div>
   );
