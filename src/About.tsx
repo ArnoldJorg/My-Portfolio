@@ -23,7 +23,7 @@ const About = ({ onInViewChange }) => {
     >
       <div className="flex flex-col items-center justify-center min-h-full w-full ">
         <div className=" flex lg:max-2xl:flex-row lg:w-[60%] lg:max-2xl:h-[70%] sm:w-full sm:max-lg:h-full lg:max-2xl:w-3/4 sm:max-lg:flex-col ">
-          <div className="w-full lg:h-full items-center justify-center space-x-10 border sm:max-lg:order-2 lg:max-2xl:order-1">
+          <div className="w-full lg:h-full items-center justify-center space-x-10  sm:max-lg:order-2 lg:max-2xl:order-1">
             <div className="flex text-white flex-col ">
               <h1 className="items-center justify-center w-full  font-InterBold text-3xl  ">
                 Arnold Mobio
@@ -44,21 +44,24 @@ const About = ({ onInViewChange }) => {
                 </p>
               </div>
               <p className=" w-full break-words text-xl text-custom-white">
-                Hello there! My name is Julius and I'm a Product Designer at
+                Hello there! My name is Arnold, and I’m a Front-End Developer
+                with a passion for crafting intuitive and responsive web
+                applications. <br /> <br />
                 {/* specific fonts and boldness I will specify soon*/}{" "}
-                <span className="opacity-100"> Flexa</span>
+                {/* <span className="opacity-100"> Flexa</span> */}
                 <span className="opacity-75">
-                  , living in Berlin. I grew up on the internet and love
-                  computers and software. <br /> <br /> In my 10 years of
-                  experience I have designed User Interfaces and experiences,
-                  planned, supported, and implemented features and roadmaps, and
-                  led cross-functional teams at companies like <b>Pitch</b>,
-                  <b>Microsoft</b>, and Native Instruments. <br /> <br />
-                  P.S The video on the right is outdated and I am no longer
-                  looking for a new role.
+                  I’ve always been fascinated by technology and how it shapes
+                  the way we interact with the world, which inspired me to dive
+                  deep into software development. <b>In my journey so far</b>,
+                  I’ve built and optimized user interfaces using tools like
+                  React, TypeScript, and Tailwind, collaborated on backend
+                  systems with Node.js and Prisma, and worked with teams to
+                  deliver scalable and impactful solutions. Whether it’s
+                  translating designs into seamless user experiences or solving
+                  complex problems, I love turning ideas into reality.
                 </span>
               </p>
-              <div className="flex space-x-4 sm:justify-center flex-row sm:my-4 lg:my-8 ">
+              <div className="flex space-x-4 sm:justify-center lg:justify-start flex-row sm:my-4 lg:my-8 ">
                 <GradientButton name="Email" />
                 <GradientButton name="CV/Resume" />
                 <GradientButton name="LinkedIn" />
