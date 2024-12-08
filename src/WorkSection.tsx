@@ -20,7 +20,7 @@ const WorkSection = ({ onInViewChange }) => {
     >
       <div className="flex lg:w-[30%] sm:w-[60%] flex-col justify-center ">
         <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-3 lg:justify-between ">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
             <img
               src={Logo1}
               width="50"
@@ -28,7 +28,7 @@ const WorkSection = ({ onInViewChange }) => {
               className=" rounded-xl i"
               alt="react-image"
             />{" "}
-            <p className="text-3xl"> Finsta Chat App</p>
+            <p className="text-3xl font-Roboto"> Finsta Chat App</p>
           </div>
           <div className="rounded-full bg-black border-2 items-center border-custom-grey-3 lg:justify-end px-3 p-1">
             <p className="text-xs">2023-2024</p>
@@ -57,8 +57,11 @@ const WorkSection = ({ onInViewChange }) => {
           alt="react-image"
         />
       </div>
-      <div className="flex lg:w-[30%] sm:w-[60%] flex-col justify-center ">
-        <p className=" w-full break-words text-xl text-custom-white">
+      <div className="flex lg:w-[30%] sm:w-[60%] flex-col ">
+        <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
+          The Finsta User Profile Page
+        </h1>
+        <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80">
           Developed the Profile Page for a client called Finsta, following Figma
           designs to accurately implement a dynamic user interface. Utilized
           complex conditional logic to display content based on available data,

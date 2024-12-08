@@ -21,9 +21,12 @@ module.exports = {
         "custom-grey-3": "rgba(38,38,38)",
         "custom-white": "rgba(203 213 225),",
       },
-      fontFamily: { custom: ["font-inter-regular", "sans-serif"] },
-      fontFamily: { Roboto: ["Roboto", "sans-serif"] },
-      fontFamily: { InterBold: ["Inter-Bold", "sans-serif"] },
+      fontFamily: {
+        custom: ["font-inter-regular", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"],
+        InterBold: ["Inter-Bold", "sans-serif"],
+      },
+
       height: {
         128: "24rem",
       },

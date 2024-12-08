@@ -25,10 +25,10 @@ const About = ({ onInViewChange }) => {
         <div className=" flex lg:max-2xl:flex-row lg:w-[60%] lg:max-2xl:h-[70%] sm:w-full sm:max-lg:h-full lg:max-2xl:w-3/4 sm:max-lg:flex-col ">
           <div className="w-full lg:h-full items-center justify-center space-x-10  sm:max-lg:order-2 lg:max-2xl:order-1">
             <div className="flex text-white flex-col ">
-              <h1 className="items-center justify-center w-full  font-InterBold text-3xl  ">
+              <h1 className="items-center justify-center w-full  text-3xl font-Roboto ">
                 Arnold Mobio
               </h1>
-              <h1 className="items-center justify-center w-full text-3xl text-custom opacity-80">
+              <h1 className="items-center justify-center w-full text-3xl text-custom opacity-80 font-InterBold">
                 Software Engineer
               </h1>
               <div className="flex flex-row my-2 ">
@@ -43,22 +43,33 @@ const About = ({ onInViewChange }) => {
                   {"<solutionize/>"}
                 </p>
               </div>
-              <p className=" w-full break-words text-xl text-custom-white">
-                Hello there! My name is Arnold, and I’m a Front-End Developer
-                with a passion for crafting intuitive and responsive web
-                applications. <br /> <br />
-                {/* specific fonts and boldness I will specify soon*/}{" "}
-                {/* <span className="opacity-100"> Flexa</span> */}
+              <p className=" w-full break-words text-xl text-custom-white font-custom">
                 <span className="opacity-75">
-                  I’ve always been fascinated by technology and how it shapes
-                  the way we interact with the world, which inspired me to dive
-                  deep into software development. <b>In my journey so far</b>,
-                  I’ve built and optimized user interfaces using tools like
-                  React, TypeScript, and Tailwind, collaborated on backend
-                  systems with Node.js and Prisma, and worked with teams to
-                  deliver scalable and impactful solutions. Whether it’s
-                  translating designs into seamless user experiences or solving
-                  complex problems, I love turning ideas into reality.
+                  {" "}
+                  Hello there! My name is Arnold, and I’m a{" "}
+                </span>{" "}
+                <span className="font-Roboto">Front-End Developer</span>
+                <span className="opacity-75">
+                  , with a passion for crafting intuitive and responsive web
+                  applications. <br /> <br /> I’ve always been fascinated by
+                  technology and how it shapes the way we interact with the
+                  world, which inspired me to dive deep into software
+                  development. In my journey so far, I’ve built and optimized
+                  user interfaces using tools like{" "}
+                </span>
+                <span className="font-Roboto">React</span>,
+                <span className="font-Roboto">Typescript</span>, and{" "}
+                <span className="font-Roboto">Tailwind</span>{" "}
+                <span className="opacity-75">
+                  , collaborated on backend systems with{" "}
+                </span>
+                <span className="font-Roboto">Node.js </span> and{" "}
+                <span className="font-Roboto">Prisma</span>
+                <span className="opacity-75">
+                  , and worked with teams to deliver scalable and impactful
+                  solutions. Whether it’s translating designs into seamless user
+                  experiences or solving complex problems, I love turning ideas
+                  into reality.
                 </span>
               </p>
               <div className="flex space-x-4 sm:justify-center lg:justify-start flex-row sm:my-4 lg:my-8 ">
