@@ -7,6 +7,7 @@ import VideoPlayer from "./Video/VideoPlayer.tsx";
 import BorderAnimation from "./Video/BorderAnimation.tsx";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import ArrowAnimation from "./assets/Videos/ArrowAnimation.mp4";
 
 const About = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
@@ -72,6 +73,7 @@ const About = ({ onInViewChange }) => {
                   into reality.
                 </span>
               </p>
+              <div></div>
               <div className="flex space-x-4 sm:justify-center lg:justify-start flex-row sm:my-4 lg:my-8 ">
                 <GradientButton name="Email" />
                 <GradientButton name="CV/Resume" />
@@ -83,6 +85,15 @@ const About = ({ onInViewChange }) => {
           <div className="sm:relative w-full h-full items-center justify-center sm:order-1 lg:order-2 sm:mb-10 sm:max-lg:border-2 ">
             <BorderAnimation />
             <VideoPlayer />
+
+            <video
+              src={ArrowAnimation}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="grayscale z-5 sm:w-[20vw] sm:h-[20vw] rotate-90 absolute top-[calc(50%+12vw)] left-[18%] transform -translate-x-1/2"
+            />
           </div>
         </div>
       </div>
