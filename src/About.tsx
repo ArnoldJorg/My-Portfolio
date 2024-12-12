@@ -92,8 +92,11 @@ const About = ({ onInViewChange }) => {
               loop
               muted
               playsInline
-              className="grayscale z-5 sm:w-[20vw] sm:h-[20vw] rotate-90 absolute top-[calc(50%+12vw)] left-[18%] transform -translate-x-1/2"
+              className="grayscale z-5 sm:w-[12vw] sm:h-[12vw] rotate-90 absolute top-[calc(50%+19vw)] left-[37%] transform -translate-x-1/2"
             />
+            <p className="z-5  text-white rotate-315  absolute top-[calc(50%+18vw)] left-[27%] transform -translate-x-1/2 font-Caveat text-2xl opacity-75">
+              Let me <br /> introduce <br /> myself
+            </p>
           </div>
         </div>
       </div>

@@ -70,6 +70,15 @@
   }
 
   @font-face {
+    font-family: "Caveat";
+    src: url("/src/assets/fonts/Inter/static/Caveat-Medium.ttf")
+      format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: "Inter-Bold";
     src: url("/src/assets/fonts/Inter/static/Inter-Bold.ttf") format("truetype");
 

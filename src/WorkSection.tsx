@@ -6,10 +6,12 @@ import Logo2 from "./assets/images/finsta-profilepage.png";
 import Logo3 from "./assets/images/finsta-iphone-picture-1.png";
 import Logo4 from "./assets/images/Finsta-lady.png";
 import Logo5 from "./assets/images/Finsta-Call.png";
+import Logo6 from "./assets/images/Q-point-all-devices.png";
+import Logo7 from "./assets/images/Q-pointlogo.png";
 
 const WorkSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   if (onInViewChange) onInViewChange(inView, "work");
@@ -36,11 +38,10 @@ const WorkSection = ({ onInViewChange }) => {
             <p className="text-xs">2023-2024</p>
           </div>
         </div>
-        <p className=" w-full break-words text-xl text-custom-white pt-[8vw]">
+        <p className=" w-full break-words text-xl text-custom-white pt-[8vw] font-custom">
           A dating app developed for a client of Solutionize, where users set
           message rates and charge per interaction.
           {/* specific fonts and boldness I will specify soon*/}{" "}
-          <span className="opacity-100"> *will remove*</span>
           <span className="opacity-75">
             I contributed to the front-end interface, creating a responsive,
             user-friendly experience. Additionally, I implemented new API routes
@@ -114,7 +115,7 @@ const WorkSection = ({ onInViewChange }) => {
         <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-3 lg:justify-between ">
           <div className="flex items-center space-x-3 py-[3vw]">
             <img
-              src={Logo1}
+              src={Logo7}
               width="50"
               height="50"
               className=" rounded-xl i"
@@ -138,6 +139,30 @@ const WorkSection = ({ onInViewChange }) => {
             staff. I also added pagination to handle large datasets, allowing
             for quicker load times and easier navigation through extensive menu
             items.
+          </span>
+        </p>
+      </div>
+      <div className="flex lg:w-[30%] sm:w-[90%] justify-center space-x-6 m-10">
+        <img
+          src={Logo6}
+          className="flex rounded-2xl border"
+          alt="react-image"
+        />
+      </div>
+      <div className="flex lg:w-[30%] sm:w-[60%] flex-col ">
+        <p>
+          <span className="flex w-full break-words text-lg text-custom-white justify-center pt-[1vh] pb-[5vh] font-custom opacity-60">
+            The User Customised Dashboard UI
+          </span>
+          <span className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80">
+            One of my key contributions was designing and building the Home Menu
+            page, displaying all food items with a user-friendly interface. I
+            conceptualized the layout using Adobe XD, aligning with our team’s
+            color scheme chosen through trial and improvement. This page
+            featured a dynamic banner at the top, adding visual appeal with a
+            moving image. I also added interactive buttons like “Order Now” and
+            quantity selectors for a streamlined ordering experience, creating a
+            smooth, engaging page tailored to high-traffic use.
           </span>
         </p>
       </div>

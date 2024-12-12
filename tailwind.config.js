@@ -25,8 +25,11 @@ module.exports = {
         custom: ["font-inter-regular", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
         InterBold: ["Inter-Bold", "sans-serif"],
+        Caveat: ["Caveat", "sans-serif"],
       },
-
+      rotate: {
+        315: "315deg",
+      },
       height: {
         128: "24rem",
       },

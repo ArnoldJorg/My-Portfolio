@@ -31,6 +31,27 @@ const MorePage = ({ onInViewChange }) => {
       <p className="text-white">
         sfgiherw9abnerioghnewrg9h0rewghn09ewrg90hrewgh90
       </p>
+      <p className="text-white">
+        sfgiherw9abnerioghnewrg9h0rewghn09ewrg90hrewgh90
+      </p>
+      <p className="text-white">
+        sfgiherw9abnerioghnewrg9h0rewghn09ewrg90hrewgh90
+      </p>
+      <p className="text-white">
+        sfgiherw9abnerioghnewrg9h0rewghn09ewrg90hrewgh90
+      </p>
+      <p className="text-white">
+        sfgiherw9abnerioghnewrg9h0rewghn09ewrg90hrewgh90
+      </p>
+      <p className="text-white">
+        sfgiherw9abnerioghnewrg9h0rewghn09ewrg90hrewgh90
+      </p>
+      <p className="text-white">
+        sfgiherw9abnerioghnewrg9h0rewghn09ewrg90hrewgh90
+      </p>
+      <p className="text-white">
+        sfgiherw9abnerioghnewrg9h0rewghn09ewrg90hrewgh90
+      </p>
     </div>
   );
 };
