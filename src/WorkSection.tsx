@@ -20,7 +20,7 @@ const WorkSection = ({ onInViewChange }) => {
     <div
       ref={ref}
       id="work-section"
-      className=" text-white flex flex-col border-pink-800  w-screen items-center"
+      className=" text-white flex flex-col  w-screen items-center"
     >
       <div className="flex lg:w-[30%] sm:w-[60%] flex-col justify-center ">
         <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-3 lg:justify-between ">
@@ -30,9 +30,9 @@ const WorkSection = ({ onInViewChange }) => {
               width="50"
               height="50"
               className=" rounded-xl"
-              alt="react-image"
+              alt="finsta-logo"
             />{" "}
-            <p className="text-3xl font-Roboto"> Finsta Chat App</p>
+            <h1 className="text-3xl font-Roboto"> Finsta Chat App</h1>
           </div>
           <div className="rounded-full bg-black border-2 items-center border-custom-grey-3 lg:justify-end px-3 p-1">
             <p className="text-xs">2023-2024</p>
@@ -41,7 +41,6 @@ const WorkSection = ({ onInViewChange }) => {
         <p className=" w-full break-words text-xl text-custom-white pt-[8vw] font-custom">
           A dating app developed for a client of Solutionize, where users set
           message rates and charge per interaction.
-          {/* specific fonts and boldness I will specify soon*/}{" "}
           <span className="opacity-75">
             I contributed to the front-end interface, creating a responsive,
             user-friendly experience. Additionally, I implemented new API routes
@@ -57,7 +56,7 @@ const WorkSection = ({ onInViewChange }) => {
         <img
           src={Logo3}
           className=" flex  w-[40%] rounded-3xl  "
-          alt="react-image"
+          alt="user-profile-interface"
         />
       </div>
       <div className="flex lg:w-[30%] sm:w-[60%] flex-col ">
@@ -80,12 +79,12 @@ const WorkSection = ({ onInViewChange }) => {
         <img
           src={Logo5}
           className="flex rounded-2xl border"
-          alt="react-image"
+          alt="the-finsta-call-function"
         />
         <img
           src={Logo4}
           className=" flex  w-[40%] rounded-3xl  "
-          alt="react-image"
+          alt="the-previous-profile-interface"
         />
       </div>
       <div className="flex lg:w-[30%] sm:w-[60%] flex-col ">
@@ -119,9 +118,9 @@ const WorkSection = ({ onInViewChange }) => {
               width="50"
               height="50"
               className=" rounded-xl i"
-              alt="react-image"
+              alt="qpoint-logo"
             />{" "}
-            <p className="text-3xl font-Roboto"> Q-point Systems</p>
+            <h2 className="text-3xl font-Roboto"> Q-point Systems</h2>
           </div>
           <div className="rounded-full bg-black border-2 items-center border-custom-grey-3 lg:justify-end px-3 p-1">
             <p className="text-xs">2022-2023</p>
@@ -146,7 +145,7 @@ const WorkSection = ({ onInViewChange }) => {
         <img
           src={Logo6}
           className="flex rounded-2xl border"
-          alt="react-image"
+          alt="qpoint-dashboard-on-phone-tablet-and-self-checkout-machine"
         />
       </div>
       <div className="flex lg:w-[30%] sm:w-[60%] flex-col ">
