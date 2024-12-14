@@ -20,10 +20,10 @@ const WorkSection = ({ onInViewChange }) => {
     <div
       ref={ref}
       id="work-section"
-      className=" text-white flex flex-col  w-screen items-center"
+      className=" text-white flex flex-col  w-screen mx-auto items-center"
     >
-      <div className="flex lg:w-[30%] sm:w-[60%] flex-col justify-center ">
-        <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-3 lg:justify-between ">
+      <div className="flex lg:w-[50%] sm:w-[60%] flex-col justify-center pt-[8vw] ">
+        <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between ">
           <div className="flex items-center space-x-3">
             <img
               src={Logo1}
@@ -51,15 +51,15 @@ const WorkSection = ({ onInViewChange }) => {
         </p>
       </div>
 
-      <div className="flex lg:w-[30%] sm:w-[90%] flex-row justify-center space-x-6 m-10">
-        <img src={Logo2} className=" flex rounded-2xl" alt="react-image" />
+      <div className="flex lg:w-[30%] sm:w-[60%] flex-row justify-center space-x-6 m-10  ">
+        <img src={Logo2} className="  rounded-2xl" alt="react-image" />
         <img
           src={Logo3}
           className=" flex  w-[40%] rounded-3xl  "
           alt="user-profile-interface"
         />
       </div>
-      <div className="flex lg:w-[30%] sm:w-[60%] flex-col ">
+      <div className="flex lg:w-[50%] sm:w-[60%] flex-col ">
         <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
           The Finsta User Profile Page
         </h1>
@@ -75,7 +75,7 @@ const WorkSection = ({ onInViewChange }) => {
           error-free performance before merging with the main codebase.
         </p>
       </div>
-      <div className="flex lg:w-[30%] sm:w-[90%] flex-row justify-center space-x-6 m-10">
+      <div className="flex lg:w-[30%] sm:w-[60%] flex-row justify-center space-x-6 m-10">
         <img
           src={Logo5}
           className="flex rounded-2xl border"
@@ -87,7 +87,7 @@ const WorkSection = ({ onInViewChange }) => {
           alt="the-previous-profile-interface"
         />
       </div>
-      <div className="flex lg:w-[30%] sm:w-[60%] flex-col ">
+      <div className="flex lg:w-[50%] sm:w-[60%] flex-col ">
         <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
           Complex Features and Seamless User Experiences
         </h1>
@@ -110,9 +110,10 @@ const WorkSection = ({ onInViewChange }) => {
           an exceptional user experience.
         </p>
       </div>
-      <div className="flex lg:w-[30%] sm:w-[60%] flex-col justify-center ">
-        <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-3 lg:justify-between ">
-          <div className="flex items-center space-x-3 py-[3vw]">
+      <div className="flex lg:w-[50%] sm:w-[60%] flex-col justify-center pt-[8vw] ">
+        {/* section i am editing */}
+        <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between ">
+          <div className="flex items-center space-x-3">
             <img
               src={Logo7}
               width="50"
@@ -122,11 +123,11 @@ const WorkSection = ({ onInViewChange }) => {
             />{" "}
             <h2 className="text-3xl font-Roboto"> Q-point Systems</h2>
           </div>
-          <div className="rounded-full bg-black border-2 items-center border-custom-grey-3 lg:justify-end px-3 p-1">
+          <div className="rounded-full bg-black border-2 items-center border-custom-grey-3 lg:justify-end  px-3 p-1">
             <p className="text-xs">2022-2023</p>
           </div>
         </div>
-        <p className=" w-full break-words text-xl text-custom-white">
+        <p className=" w-full break-words text-xl text-custom-white pt-[8vw]">
           <span className="font-custom opacity-80">
             Contributed to the development of the admin panel for a{" "}
           </span>
@@ -141,14 +142,14 @@ const WorkSection = ({ onInViewChange }) => {
           </span>
         </p>
       </div>
-      <div className="flex lg:w-[30%] sm:w-[90%] justify-center space-x-6 m-10">
+      <div className="flex lg:w-[30%]  sm:w-[60%] justify-center space-x-6 m-10">
         <img
           src={Logo6}
-          className="flex rounded-2xl border"
+          className="flex rounded-2xl "
           alt="qpoint-dashboard-on-phone-tablet-and-self-checkout-machine"
         />
       </div>
-      <div className="flex lg:w-[30%] sm:w-[60%] flex-col ">
+      <div className="flex lg:w-[50%] sm:w-[60%] flex-col ">
         <p>
           <span className="flex w-full break-words text-lg text-custom-white justify-center pt-[1vh] pb-[5vh] font-custom opacity-60">
             The User Customised Dashboard UI

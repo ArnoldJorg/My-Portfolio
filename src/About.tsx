@@ -20,12 +20,12 @@ const About = ({ onInViewChange }) => {
     <div
       ref={ref}
       id="about-section"
-      className=" py-[8vw] w-screen scroll-smooth "
+      className=" pt-[8vw] w-screen scroll-smooth "
     >
-      <div className="flex flex-col items-center justify-center min-h-full w-full ">
-        <div className=" flex lg:max-2xl:flex-row lg:w-[60%] lg:max-2xl:h-[70%] sm:w-full sm:max-lg:h-full lg:max-2xl:w-3/4 sm:max-lg:flex-col ">
-          <div className="w-full lg:h-full items-center justify-center space-x-10  sm:max-lg:order-2 lg:max-2xl:order-1">
-            <div className="flex text-white flex-col ">
+      <div className="flex flex-col items-center justify-center min-h-full border-2">
+        <div className=" flex lg:flex-row lg:w-[60%] lg:h-[70%] sm:w-full sm:max-lg:h-full lg:max-2xl:w-3/4 sm:max-lg:flex-col border-2 sm:items-center">
+          <div className="lg:w-full sm:w-[80%] border-2  lg:h-full items-center justify-center sm:order-2 lg:order-1 break-words">
+            <div className="flex text-white flex-col">
               <h1 className="items-center justify-center w-full  text-3xl font-Roboto ">
                 Arnold Mobio
               </h1>
@@ -82,7 +82,7 @@ const About = ({ onInViewChange }) => {
               </div>
             </div>
           </div>
-          <div className="sm:relative w-full h-full items-center justify-center sm:order-1 lg:order-2 sm:mb-10 sm:max-lg:border-2 ">
+          <div className="sm:relative w-full h-full items-center justify-center sm:order-1 lg:order-2 sm:mb-10">
             <BorderAnimation />
             <VideoPlayer />
 
