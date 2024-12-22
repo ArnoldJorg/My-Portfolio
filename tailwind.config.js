@@ -28,10 +28,14 @@ module.exports = {
         Caveat: ["Caveat", "sans-serif"],
       },
       rotate: {
+        160: "160deg",
         315: "315deg",
       },
       height: {
         128: "24rem",
+      },
+      screens: {
+        phone: "300px", // Custom breakpoint
       },
     },
   },

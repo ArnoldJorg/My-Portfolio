@@ -8,7 +8,7 @@ const BorderAnimation = () => {
       alt="Scribble"
       // width="=100"
       // height="100"
-      className="absolute sm:items-center sm:justify-center sm:top:10 lg:w-[25vw] inset-x-1/3 m-auto sm:w-[30vw] sm:h-[30vw] lg:h-[25vw] z-30  scribble-border-animation  object-cover invert rounded-full pixelated grayscale pointer pointer-events-none "
+      className="absolute phone:items-center phone:justify-center phone:top:10  inset-x-1/3 m-auto phone:w-[30vw] phone:h-[30vw] lg:w-[25vw] lg:h-[25vw] z-30  scribble-border-animation  object-cover invert rounded-full pixelated grayscale pointer pointer-events-none "
     />
   );
 };

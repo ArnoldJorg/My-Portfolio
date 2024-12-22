@@ -7,7 +7,7 @@ import VideoPlayer from "./Video/VideoPlayer.tsx";
 import BorderAnimation from "./Video/BorderAnimation.tsx";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import ArrowAnimation from "./assets/Videos/ArrowAnimation.mp4";
+import ArrowAnimation from "./assets/Videos/arrowAnimation2.MP4";
 
 const About = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
@@ -22,9 +22,9 @@ const About = ({ onInViewChange }) => {
       id="about-section"
       className=" pt-[8vw] w-screen scroll-smooth "
     >
-      <div className="flex flex-col items-center justify-center min-h-full border-2">
-        <div className=" flex lg:flex-row lg:w-[60%] lg:h-[70%] sm:w-full sm:max-lg:h-full lg:max-2xl:w-3/4 sm:max-lg:flex-col border-2 sm:items-center">
-          <div className="lg:w-full sm:w-[80%] border-2  lg:h-full items-center justify-center sm:order-2 lg:order-1 break-words">
+      <div className="flex flex-col items-center justify-center min-h-full ">
+        <div className=" flex lg:flex-row lg:h-[70%] phone:w-full phone:max-lg:h-full lg:w-3/4 phone:flex-col phone:justify-center phone:max-lg:items-center ">
+          <div className="lg:w-full sm:w-[85%] phone:w-[90%] lg:h-full items-center justify-center phone:order-2 lg:order-1 break-words">
             <div className="flex text-white flex-col">
               <h1 className="items-center justify-center w-full  text-3xl font-Roboto ">
                 Arnold Mobio
@@ -74,15 +74,25 @@ const About = ({ onInViewChange }) => {
                 </span>
               </p>
               <div></div>
-              <div className="flex space-x-4 sm:justify-center lg:justify-start flex-row sm:my-4 lg:my-8 ">
-                <GradientButton name="Email" />
-                <GradientButton name="CV/Resume" />
-                <GradientButton name="LinkedIn" />
-                <GradientButton name="Whats App" />
+              <div className="flex space-x-4 phone:justify-center lg:justify-start flex-row phone:my-4 lg:my-8 ">
+                {/* <GradientButton name="Email" /> */}
+                <GradientButton
+                  name="CV/Resume"
+                  link="/Arnold Jorg M CV.docx"
+                  download="Arnold_Mobio_CV.docx"
+                />
+                <GradientButton
+                  name="LinkedIn"
+                  link="https://www.linkedin.com/in/arnold-j%C3%B6rg-m/"
+                />
+                <GradientButton
+                  name="Whats App"
+                  link="https://www.google.com/"
+                />
               </div>
             </div>
           </div>
-          <div className="sm:relative w-full h-full items-center justify-center sm:order-1 lg:order-2 sm:mb-10">
+          <div className="relative w-full h-full items-center justify-center phone:order-1 lg:order-2 phone:mb-10 ">
             <BorderAnimation />
             <VideoPlayer />
 
@@ -92,14 +102,15 @@ const About = ({ onInViewChange }) => {
               loop
               muted
               playsInline
-              className="grayscale z-5 sm:w-[12vw] sm:h-[12vw] rotate-90 absolute top-[calc(50%+19vw)] left-[37%] transform -translate-x-1/2"
+              className="  grayscale z-5 lg:w-[12vw] lg:h-[12vw] sm:w-[24vw] sm:h-[24vw] phone:w-[20vw] phone:h-[20vw] lg:rotate-90 phone:rotate-160 absolute min-[1375px]:top-[calc(50%+19vw)] min-[1375px]:left-[37%] transform -translate-x-1/2 lg:top-[calc(50%+20vw)] lg:left-[40%] sm:max-[1375px]:top-[calc(0%+1vw)] phone:top-[calc(10%+1vw)] sm:max-[1375px]:left-[27%] phone:max-[1375px]:left-[28%] "
             />
-            <h2 className="z-5  text-white rotate-315  absolute top-[calc(50%+18vw)] left-[27%] transform -translate-x-1/2 font-Caveat text-2xl opacity-75">
+            <h2 className="z-5  text-white rotate-315  absolute lg:top-[calc(50%+18vw)] lg:left-[27%] phone:top-[10%] phone:left-[12%] transform -translate-x-1/2 font-Caveat  phone:text-lg sm:text-2xl opacity-75">
               Let me <br /> introduce <br /> myself
             </h2>
           </div>
         </div>
       </div>
+      {/* marking when it was perfect */}
     </div>
   );
 };

@@ -22,8 +22,8 @@ const WorkSection = ({ onInViewChange }) => {
       id="work-section"
       className=" text-white flex flex-col  w-screen mx-auto items-center"
     >
-      <div className="flex lg:w-[50%] sm:w-[60%] flex-col justify-center pt-[8vw] ">
-        <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between ">
+      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col justify-center pt-[8vw] ">
+        <div className="flex  phone:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between ">
           <div className="flex items-center space-x-3">
             <img
               src={Logo1}
@@ -51,7 +51,7 @@ const WorkSection = ({ onInViewChange }) => {
         </p>
       </div>
 
-      <div className="flex lg:w-[30%] sm:w-[60%] flex-row justify-center space-x-6 m-10  ">
+      <div className="flex lg:w-[30%]  phone:w-[60%] flex-row justify-center space-x-6 m-10  ">
         <img src={Logo2} className="  rounded-2xl" alt="react-image" />
         <img
           src={Logo3}
@@ -59,7 +59,7 @@ const WorkSection = ({ onInViewChange }) => {
           alt="user-profile-interface"
         />
       </div>
-      <div className="flex lg:w-[50%] sm:w-[60%] flex-col ">
+      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col ">
         <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
           The Finsta User Profile Page
         </h1>
@@ -75,7 +75,7 @@ const WorkSection = ({ onInViewChange }) => {
           error-free performance before merging with the main codebase.
         </p>
       </div>
-      <div className="flex lg:w-[30%] sm:w-[60%] flex-row justify-center space-x-6 m-10">
+      <div className="flex lg:w-[30%] phone:w-[60%] flex-row justify-center space-x-6 m-10">
         <img
           src={Logo5}
           className="flex rounded-2xl border"
@@ -87,7 +87,7 @@ const WorkSection = ({ onInViewChange }) => {
           alt="the-previous-profile-interface"
         />
       </div>
-      <div className="flex lg:w-[50%] sm:w-[60%] flex-col ">
+      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col ">
         <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
           Complex Features and Seamless User Experiences
         </h1>
@@ -110,15 +110,15 @@ const WorkSection = ({ onInViewChange }) => {
           an exceptional user experience.
         </p>
       </div>
-      <div className="flex lg:w-[50%] sm:w-[60%] flex-col justify-center pt-[8vw] ">
+      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col justify-center pt-[8vw] ">
         {/* section i am editing */}
-        <div className="flex  sm:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between ">
+        <div className="flex  phone:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between ">
           <div className="flex items-center space-x-3">
             <img
               src={Logo7}
               width="50"
               height="50"
-              className=" rounded-xl i"
+              className=" rounded-xl "
               alt="qpoint-logo"
             />{" "}
             <h2 className="text-3xl font-Roboto"> Q-point Systems</h2>
@@ -149,7 +149,7 @@ const WorkSection = ({ onInViewChange }) => {
           alt="qpoint-dashboard-on-phone-tablet-and-self-checkout-machine"
         />
       </div>
-      <div className="flex lg:w-[50%] sm:w-[60%] flex-col ">
+      <div className="flex lg:w-[50%] sm:w-[60%] phone: w-[90%] flex-col ">
         <p>
           <span className="flex w-full break-words text-lg text-custom-white justify-center pt-[1vh] pb-[5vh] font-custom opacity-60">
             The User Customised Dashboard UI

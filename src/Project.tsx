@@ -33,8 +33,8 @@ const Project = ({
       </p>
 
       <div className="flex flex-1 justify-end">
-        <div className="flex flex-col">
-          <div className="flex-row flex space-x-1">
+        <div className="flex flex-col phone:space-y-1">
+          <div className="flex-row flex sm:space-x-1 ">
             {reactIcon && (
               <img
                 src={ReactLogo}
@@ -112,12 +112,23 @@ const Project = ({
                 src={Logo9}
                 width="25"
                 height="25"
+                className=" flex rounded-lg phone:max-sm:hidden"
+                alt="Axios-Icon"
+              />
+            )}
+          </div>
+          <div className="flex flex-1 sm:hidden max-[375px]:justify-end ">
+            {" "}
+            {axiosIcon && (
+              <img
+                src={Logo9}
+                width="25"
+                height="25"
                 className=" flex rounded-lg"
                 alt="Axios-Icon"
               />
             )}
           </div>
-          <div className="flex flex-1" />
         </div>
       </div>
     </div>

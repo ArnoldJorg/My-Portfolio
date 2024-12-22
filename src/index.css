@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.crop-container {
+  clip-path: inset(0 0 0 0); /* Crops 3px from the right */
+}
+
+.cropped-video {
+  object-fit: cover; /* Ensures video scales correctly */
+}
+
 @keyframes toggleRotate {
   0% {
     transform: rotate(0deg);
