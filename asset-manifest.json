@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.58749c5d.css",
+    "main.js": "/static/js/main.c850251c.js",
+    "static/js/453.3fa2f7d5.chunk.js": "/static/js/453.3fa2f7d5.chunk.js",
+    "static/media/finsta-profilepage.png": "/static/media/finsta-profilepage.53ace2530a573a985d7d.png",
+    "static/media/Finsta-Call.png": "/static/media/Finsta-Call.359ec2b45be2a89f0244.png",
+    "static/media/ArnoldSelfie.jpg": "/static/media/ArnoldSelfie.14d15b95022f4cdce243.jpg",
+    "static/media/Q-point-all-devices.png": "/static/media/Q-point-all-devices.ed960e37a85f9050a8c6.png",
+    "static/media/Finsta-lady.png": "/static/media/Finsta-lady.239e93c7caf7ffef38f0.png",
+    "static/media/finsta-iphone-picture-1.png": "/static/media/finsta-iphone-picture-1.854d73b82778a49a4a3f.png",
+    "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.6ddedd9ac326bf6ee3ea.ttf",
+    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.fd012577d3f8e88a8149.ttf",
+    "static/media/Caveat-Medium.ttf": "/static/media/Caveat-Medium.a661a40777402bb8c6ff.ttf",
+    "static/media/Roboto-Bold.ttf": "/static/media/Roboto-Bold.d50a80138ec4f2fb5e9f.ttf",
+    "static/media/postgresql-logo.png": "/static/media/postgresql-logo.467c3a83ac6939dcb17d.png",
+    "static/media/react-native-logo.png": "/static/media/react-native-logo.2994b6282da83afbfaf0.png",
+    "static/media/node-js-logo.png": "/static/media/node-js-logo.36c630c20c51b6ee746b.png",
+    "static/media/tailwind-logo.png": "/static/media/tailwind-logo.479d7a8b4dc069959b65.png",
+    "static/media/Q-pointlogo.png": "/static/media/Q-pointlogo.fd563980f817e959c0b8.png",
+    "static/media/axios-logo.png": "/static/media/axios-logo.719a303d970691328f07.png",
+    "static/media/JavaScript-logo.png": "/static/media/JavaScript-logo.3ade557547ee3603cbf9.png",
+    "index.html": "/index.html",
+    "main.58749c5d.css.map": "/static/css/main.58749c5d.css.map",
+    "main.c850251c.js.map": "/static/js/main.c850251c.js.map",
+    "453.3fa2f7d5.chunk.js.map": "/static/js/453.3fa2f7d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58749c5d.css",
+    "static/js/main.c850251c.js"
+  ]
+}
