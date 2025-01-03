@@ -15,8 +15,9 @@ import ProjectDetails from "../ProjectDetails.tsx";
 
 const MoreSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
-    threshold: 0.9,
-    // 0.5
+    threshold: 0.5,
+
+    // 0.9 is uni project
   });
 
   if (onInViewChange) onInViewChange(inView, "more");
@@ -74,7 +75,8 @@ const MoreSection = ({ onInViewChange }) => {
           />
         </div>
       </div>
-      {/* <Projects
+      <Projects
+        hyperlink="https://arnoldjorg.github.io/My-Portfolio/"
         images={[
           {
             url: PortfolioImage,
@@ -88,10 +90,11 @@ const MoreSection = ({ onInViewChange }) => {
             alt: "Image-of-a-Note",
             projectName: "Note App",
             textColor: "text-white",
-            hoverText: "Click here to check out our project on Github!",
+
+            // hoverText: "Click here to check out our project on Github!",
           },
         ]}
-      /> */}
+      />
     </div>
   );
 };
